@@ -1,0 +1,61 @@
+.singleCar {
+  height: 500px;
+  width: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 2px 2px 2px 2px rgb(124, 109, 109);
+}
+.display {
+  margin-top: 20px;
+}
+.carMake {
+  /* background-color: rgb(6, 6, 41); */
+  color: rgb(10, 10, 43);
+  padding: 10px;
+  width: 400px;
+  border-bottom: 1px solid black;
+}
+.carImage {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: black;
+}
+.main-container {
+  margin: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 10px;
+}
+.addToCartButton {
+  background-color: black;
+  color: aliceblue;
+}
+
+@media (max-width: 500px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar {
+    visibility: hidden;
+  }
+}
+
+.search-detail{
+  margin: 0 auto;
+  width : 70%;
+  border: thin;
+}
